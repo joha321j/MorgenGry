@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace MorgenGry
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId { get; }
-        public string Title { get; }
-        public double Price { get; }
+        public string Title { get; set; }
+        public double Price { get; set; }
 
         public Book(string itemId) : this(itemId, "", 0)
         {

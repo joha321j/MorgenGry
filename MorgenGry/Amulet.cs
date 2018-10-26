@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 namespace MorgenGry
 {
 
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        public string ItemId { get; }
-        public string Design { get; }
-        public Level Quality { get; }
+        public string Design { get; set; }
+        public Level Quality { get; set; }
 
         public Amulet(string itemId) : this(itemId, Level.medium, "")
         {
