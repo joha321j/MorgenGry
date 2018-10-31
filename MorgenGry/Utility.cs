@@ -5,12 +5,12 @@ namespace MorgenGry
 {
     public class Utility
     {
-        public static double GetValueOfBook(Book b1)
+        private static double GetValueOfBook(Book b1)
         {
             return b1.Price;
         }
 
-        public static double GetValueOfAmulet(Amulet a11)
+        private static double GetValueOfAmulet(Amulet a11)
         {
             switch (a11.Quality)
             {
@@ -28,6 +28,18 @@ namespace MorgenGry
         public static double GetValueOfCourse(Course c111)
         {
             return Math.Ceiling(c111.DurationInMinutes / 60.0) * 875.0;
+        }
+
+        public static double GetValueOfMerchandise(Merchandise merchandise)
+        {
+            if (merchandise is Amulet)
+            {
+                return GetValueOfAmulet((Amulet) merchandise);
+            }
+            else
+            {
+                return GetValueOfBook((Book) merchandise);
+            }
         }
     }
 }

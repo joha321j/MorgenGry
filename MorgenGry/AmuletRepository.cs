@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MorgenGry
 {
+    /*
     public class AmuletRepository
     {
         private List<Amulet> amuletList = new List<Amulet>();
@@ -40,4 +41,5 @@ namespace MorgenGry
             return totalValue;
         }
     }
+    */
 }

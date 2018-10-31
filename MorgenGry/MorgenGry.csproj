@@ -51,6 +51,7 @@
     <Compile Include="CourseRepository.cs" />
     <Compile Include="Level.cs" />
     <Compile Include="Merchandise.cs" />
+    <Compile Include="MerchandiseRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />

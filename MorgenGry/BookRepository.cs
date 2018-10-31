@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MorgenGry
 {
+    /*
     public class BookRepository
     {
         private List<Book> bookList = new List<Book>();
@@ -31,10 +32,11 @@ namespace MorgenGry
             double totalValue = 0.0;
             foreach (Book book in bookList)
             {
-                totalValue += book.Price;
+                totalValue += Utility.GetValueOfBook(book);
             }
 
             return totalValue;
         }
-    }
+    
+    */
 }
