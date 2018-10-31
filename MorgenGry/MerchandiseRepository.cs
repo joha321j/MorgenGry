@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace MorgenGry
 {
+    /*
     public class MerchandiseRepository
     {
+        
         private List<Merchandise> merchandiseList = new List<Merchandise>();
 
         public void AddMerchandise(Merchandise merchandise)
@@ -38,4 +40,5 @@ namespace MorgenGry
             return totalValue;
         }
     }
+    */
 }

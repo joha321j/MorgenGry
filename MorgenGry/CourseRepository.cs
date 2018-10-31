@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MorgenGry
 {
+    /*
     public class CourseRepository
     {
         private List<Course> courseList = new List<Course>();
@@ -40,4 +41,5 @@ namespace MorgenGry
         }
 
     }
+    */
 }
