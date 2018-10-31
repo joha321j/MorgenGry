@@ -26,8 +26,12 @@ namespace MorgenGry
             Price = price;
         }
 
-        new
-        public string ToString()
+        public override double GetValue()
+        {
+            return Price;
+        }
+
+        public override string ToString()
         {
             return "ItemId: " + ItemId + ", Title: "+ Title + ", Price: " + Price;
         }

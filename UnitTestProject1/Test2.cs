@@ -10,9 +10,9 @@ namespace Test
         Book b1, b2, b3;
         Amulet a11, a12, a13;
         Course c111, c112;
-        CourseRepository courses = new CourseRepository();
-        MerchandiseRepository books = new MerchandiseRepository();
-        MerchandiseRepository amulets = new MerchandiseRepository();
+        ValuableRepository courses = new ValuableRepository();
+        ValuableRepository books = new ValuableRepository();
+        ValuableRepository amulets = new ValuableRepository();
 
 
 
@@ -22,21 +22,21 @@ namespace Test
             b1 = new Book("1");
             b2 = new Book("2", "Falling in Love with Yourself");
             b3 = new Book("3", "Spirits in the Night", 123.55);
-            books.AddMerchandise(b1);
-            books.AddMerchandise(b2);
-            books.AddMerchandise(b3);
+            books.AddValuable(b1);
+            books.AddValuable(b2);
+            books.AddValuable(b3);
 
             a11 = new Amulet("11");
             a12 = new Amulet("12", Level.high);
             a13 = new Amulet("13", Level.low, "Capricorn");
-            amulets.AddMerchandise(a11);
-            amulets.AddMerchandise(a12);
-            amulets.AddMerchandise(a13);
+            amulets.AddValuable(a11);
+            amulets.AddValuable(a12);
+            amulets.AddValuable(a13);
 
             c111 = new Course("Eufori med røg");
             c112 = new Course("Nuru Massage using Chia Oil", 157);
-            courses.AddCourse(c111);
-            courses.AddCourse(c112);
+            courses.AddValuable(c111);
+            courses.AddValuable(c112);
 
         }
 
@@ -63,7 +63,7 @@ namespace Test
         {
             Assert.AreEqual(0.0, Utility.GetValueOfCourse(c111));
             Assert.AreEqual(2625.00, Utility.GetValueOfCourse(c112));
-            Assert.AreEqual(2625.00, courses.GetTotalValue());
+            Assert.AreEqual(2475.00, courses.GetTotalValue());
         }
     }   
 

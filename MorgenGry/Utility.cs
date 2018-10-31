@@ -5,6 +5,11 @@ namespace MorgenGry
 {
     public class Utility
     {
+        public static double LowQualityValue { get; set; } = 12.5;
+        public static double MediumQualityValue { get; set; } = 20.0;
+        public static double HighQualityValue { get; set; } = 27.5;
+        public static double CourseHourValue { get; set; } = 875.0;
+
         private static double GetValueOfBook(Book b1)
         {
             return b1.Price;
@@ -15,11 +20,11 @@ namespace MorgenGry
             switch (a11.Quality)
             {
                 case Level.low:
-                    return 12.5;
+                    return LowQualityValue;
                 case Level.medium:
-                    return 20.0;
+                    return MediumQualityValue;
                 case Level.high:
-                    return 27.5;
+                    return HighQualityValue;
                 default:
                     throw new System.Exception();
             }
@@ -27,7 +32,7 @@ namespace MorgenGry
 
         public static double GetValueOfCourse(Course c111)
         {
-            return Math.Ceiling(c111.DurationInMinutes / 60.0) * 875.0;
+            return Math.Ceiling(c111.DurationInMinutes / 60.0) * CourseHourValue;
         }
 
         public static double GetValueOfMerchandise(Merchandise merchandise)
